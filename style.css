@@ -1,0 +1,279 @@
+/* Variables */
+
+:root {
+	--basic-black: #000000;
+	--basic-white: #ffffff;
+	--basic-light-gray: #F8F8F8;
+	--basic-yellow: #FBCB03;
+	--basic-dark-yellow: #E6B901;
+	
+}
+
+body {
+	margin: 0;
+	font-size: 18px;
+	color: var(--basic-black);
+	font-family: 'Montserrat', "Arial", sans-serif;
+	font-weight: 300;
+	line-height: 27px;
+
+}
+
+
+.wrap {
+	max-width: 1260px;
+	min-width: 320px;
+	width:100%;
+    margin: 0 auto;
+}
+
+.visually-hidden{
+	position: absolute;
+	width: 1px;
+  	height: 1px;
+  	margin: -1px;
+  	border: 0;
+  	padding: 0;
+	clip: rect(0 0 0 0);
+  	overflow: hidden;
+}
+
+.page {
+	height: 100vh;
+	width:100vw;
+	box-sizing: border-box;
+}
+
+.h1{
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 1.2em;
+	margin-top: 61px;
+	margin-bottom: 16px;
+}
+
+a { 
+	opacity: 0.32;
+}
+
+
+.conference{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+	padding-top: 146px;
+
+
+}
+
+.conference__about {
+	width:505px;
+}
+
+.conference__fig-img {
+	position: absolute;
+	z-index: -1;
+    top: 183px;
+    right: 0;
+}
+
+.conference__fig {
+	position: absolute;
+	margin: 0;
+    z-index: -2;
+    width: 760px;
+    top: 0;
+    right: 0;
+    height: 795px;
+    background: url(img/line2.png) no-repeat;
+
+    animation: zebra 3s linear infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation: zebra 3s linear infinite;
+ }
+.conference__desc {
+    padding-bottom: 50px;
+}
+/*First screen*/
+/*.conference{
+	width: 714px;
+	height: 795px;
+	background: url("img/line2.png") no-repeat;
+    animation: zebra 3s linear infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation: zebra 3s linear infinite;
+    overflow-x: hidden;
+
+
+}
+.conference__img{
+	display: block;
+	margin-left:41px;
+	margin-top:184px;
+
+}*/
+
+
+
+/*Buttons*/
+.btn{
+	font-family: 'Montserrat', "Arial", sans-serif;
+	border-radius: 12px;
+	border:none;
+	width: 210px;
+	text-align: center;
+	padding-top: 19px;
+	padding-bottom: 19px;
+	margin-right: 21px;
+	cursor: pointer;
+
+}
+.btn--buy{
+	background-color: var(--basic-yellow);
+	color:var(--basic-black);
+	padding:19px;
+	position: relative;
+}
+.btn--buy:before{
+	content: "";
+	position: absolute;
+	top:-40px;
+	left: 83px;
+	z-index: 2;
+	width: 44px;
+	height: 44px;
+	background-image: url("img/human_hi.png");
+	background-position: top center;
+}
+.btn--buy:hover,.btn--buy:active{
+	background-color: var(--basic-dark-yellow);
+
+}
+.btn--close{
+	background-color: var(--basic-black);
+	color: var(--basic-white);
+	position: relative;
+}
+.btn--close:before{
+	content: "";
+	position: absolute;
+	top:-40px;
+	left: 83px;
+	z-index: 2;
+	width: 44px;
+	height: 44px;
+	background-image: url("img/human_facepalm.png");
+	background-position: top center;}
+.btn--close:hover,.btn--close:active{
+	background: rgba(0, 0, 0, 0.8);
+	
+}
+.btn--refuse{
+	display: block;
+	width: 441px;
+	height: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	background-color: var(--basic-black);
+	color:var(--basic-white);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px;
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 45px;
+}
+/*modal window cotact us*/
+.modal{
+	display: none;
+	position: fixed;
+	width:100%;
+	height: 100%;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	background-color:  var(--basic-white);
+  	padding:87px 80px;
+  	box-sizing: border-box;
+}
+
+.contact {
+	display: grid;
+  	grid-template-rows: 1fr min-content;
+  	margin: 0 auto;
+  	width:610px;
+  	height: 100%;
+}
+/*.contact{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 87px;
+	padding-left: 80px;
+}*/
+.contact__form{
+	width: 610px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 36px;
+}
+.subscribe__form__agree{
+	width:237px;
+	color:;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px;
+	color: rgba(0, 0, 0, 0.32);
+}
+.contact__form--refuse{
+	background-color: var(--basic-black);
+	color: var(--basic-white);
+	padding-left:84px;
+	position: relative;
+}
+.contact__form--refuse p:before{
+	content: "";
+	position: absolute;
+	left: 25px;
+	width: 44px;
+	height: 44px;
+	background-image: url("img/human_facepalm.png");
+	background-position: top center;
+}
+.btn--close:hover,.btn--close:active{
+	background: rgba(0, 0, 0, 0.8);
+}
+.refuse__form{padding-top: 82px;}
+
+
+
+@keyframes zebra {
+    0%{
+    	background-position: 0% 0%;
+    }
+    25%{
+    	background-position: 25% 0%;
+    }
+    50%{
+    	background-position: 50% 0%;	
+    }
+    75%{
+    	background-position: 75% 0%;
+    }
+    100%{
+    	background-position: 100% 0%;
+    }
+}

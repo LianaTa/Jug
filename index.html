@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="style.css">
+	<title>JUG Конференции</title>
+</head>
+<body>
+	<section class="conference page">
+		<div  class="wrap">
+			<div class="conference__about">
+				<a href="#">
+					<img src="img/jug_logo.png" alt ="логотип JUG Ru Group">  <!-- need svg -->
+				</a>
+				<h1 class="visually-hidden">Конференции для программистов</h1>
+				<h2 class="h1">Конференции, которые нужны</h1>
+				<p class="conference__desc">
+					Мы, JUG Ru Group, делаем крупнейшие конференции для программистов и сочувствующих.
+					С нас — крутая программа, топовые спикеры, технические доклады без воды.
+					С вас — готовность смотреть и общаться.
+				</p>
+
+				<button type="button" class="btn btn--buy">Купить билет</button>
+				<button type="button" class="btn btn--close">Послать в жопу</button>
+			</div>
+
+			<figure class="conference__fig">
+				<img class = "conference__fig-img" src = "img/background.png" alt = "fon_img" >
+			</figure>	
+			
+		</div>
+	</section>
+
+	<div class="modal  page">
+		<section class = "contact">
+			<div class="subscribe contact__form">
+				<h2 class="visually-hidden">Подписаться на рассылку</h2>
+				<p>Я хочу знать,когда будет офлайн</p>
+				<form class="form subscribe__form">
+					<input class ="form__email" type="email"  nam="email" >
+					<button class="btn">Подписаться</button>
+				</form>
+				<p class="subscribe__form__agree" >Нажимая на кнопку вы соглашаетесь  на обработку <a href="#">персональных данных</a></p>
+			</div>
+
+			<a href="#">Я кликнул просто посмотреть</a>
+
+		</section>
+
+		<!--feadback <div class="refuse contact__form contact__form--refuse">
+			<h2 class="visually-hidden">Отказаться от услуг</h2>
+			<p>Идите в жопу!</p>
+			<form class="refuse__form">
+				<button class = "btn--refuse" type = "submit">Вы свои цены видели</button>
+				<button class = "btn--refuse" type = "submit">Цены ни о чем</button>
+				<button class = "btn--refuse" type = "submit">У вас там всё хорошо?</button>
+				<button class = "btn--refuse" type = "submit">Денег нет,но вы держитесь</button>
+			</form>
+		</div>-->
+	</div>
+
+</body>
+</html>
