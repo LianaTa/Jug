@@ -40,8 +40,7 @@ body {
 
 .page {
 	height: 100vh;
-	width:100vw;
-	box-sizing: border-box;
+	overflow: hidden;
 }
 
 .h1{
@@ -53,11 +52,17 @@ body {
 }
 
 a { 
-	opacity: 0.32;
+	color: rgba(0, 0, 0, 0.32);
 }
 
+p {
+	margin: 0;
+}
+.flex {
 
-.conference{
+	display: flex;
+}
+.conference {
 	position: relative;
 	display: flex;
 	flex-direction: row;
@@ -161,7 +166,7 @@ a {
 	color: var(--basic-white);
 	position: relative;
 }
-.btn--close:before{
+.btn--close:before {
 	content: "";
 	position: absolute;
 	top:-40px;
@@ -170,8 +175,9 @@ a {
 	width: 44px;
 	height: 44px;
 	background-image: url("img/human_facepalm.png");
-	background-position: top center;}
-.btn--close:hover,.btn--close:active{
+	background-position: top center;
+}
+.btn--close:hover,.btn--close:active {
 	background: rgba(0, 0, 0, 0.8);
 	
 }
@@ -191,6 +197,9 @@ a {
 	box-sizing: border-box;
 	border-radius: 45px;
 }
+.btn--close:hover,.btn--close:active {
+	background: rgba(0, 0, 0, 0.8);
+}
 /*modal window cotact us*/
 .modal{
 	display: none;
@@ -206,20 +215,122 @@ a {
   	box-sizing: border-box;
 }
 
-.contact {
+.modal-contact {
+	position: relative;
 	display: grid;
   	grid-template-rows: 1fr min-content;
   	margin: 0 auto;
   	width:610px;
   	height: 100%;
+  	width: 610px;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 36px;
 }
+.subscribe {
+	padding-top: 56px;
+	padding-left: 25px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+
+}
+.subscribe__fig {
+	margin: 0;
+	padding-top: 6px 0px;
+}
+.subscribe__fig-img {
+	height: 60px;
+
+}
+.subscribe__desc {
+	width: 292px;
+	margin-left: 20px;
+}
+.subscribe__form {
+	margin-top: 150px;
+	margin-bottom: 100px;
+}
+.subscribe__form input {
+	width: 306px;
+	height: 50px;
+	padding-left: 28px;
+	background: var(--basic-light-gray);
+	border: none;
+	border-radius: 11px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(0, 0, 0, 0.32);
+}
+
+.subscribe__form input:focus {
+	color:var(--basic-black);
+} 
+
+.subscribe__form__agree {
+	
+	width:237px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	color: rgba(0, 0, 0, 0.32);
+}
+
+.feedback {
+
+	padding-top: 56px;
+	padding-left: 25px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+}
+
+.feedback__desc {
+	width: 292px;
+	margin-left: 20px;
+}
+
+.feedback__fig {
+	margin: 0;
+	padding-top: 6px 0px;
+}
+.feedback__fig-img {
+	height: 60px;
+
+}
+
+.refuse__form {
+	margin-top: 150px;
+	margin-bottom: 100px;
+}
+.link_goback {
+	display: block;
+	padding-left: 41px;
+	text-decoration: none;
+	color: var(--basic-black);
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 36px;
+}
+.link_goback:before {
+	content: "";
+	height: 35px;
+	width: 18px;
+	position: absolute;
+	left:1px;
+	background-image: url("img/vector.svg");
+
+}
+
 /*.contact{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-top: 87px;
 	padding-left: 80px;
-}*/
+}
 .contact__form{
 	width: 610px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
@@ -228,23 +339,14 @@ a {
 	font-style: normal;
 	font-weight: 600;
 	line-height: 36px;
-}
-.subscribe__form__agree{
-	width:237px;
-	color:;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 18px;
-	color: rgba(0, 0, 0, 0.32);
-}
+}*/
 .contact__form--refuse{
 	background-color: var(--basic-black);
 	color: var(--basic-white);
 	padding-left:84px;
 	position: relative;
 }
-.contact__form--refuse p:before{
+/*.contact__form--refuse p:before{
 	content: "";
 	position: absolute;
 	left: 25px;
@@ -252,11 +354,7 @@ a {
 	height: 44px;
 	background-image: url("img/human_facepalm.png");
 	background-position: top center;
-}
-.btn--close:hover,.btn--close:active{
-	background: rgba(0, 0, 0, 0.8);
-}
-.refuse__form{padding-top: 82px;}
+}*/
 
 
 

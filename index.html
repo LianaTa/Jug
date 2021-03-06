@@ -35,32 +35,46 @@
 		</div>
 	</section>
 
-	<div class="modal  page">
-		<section class = "contact">
-			<div class="subscribe contact__form">
+	<div class="modal  page modal-subscribe">
+		<section class = "modal-contact">
+			<div class="subscribe">
 				<h2 class="visually-hidden">Подписаться на рассылку</h2>
-				<p>Я хочу знать,когда будет офлайн</p>
+				<div class="flex">
+					<figure class="subscribe__fig">
+						<img class = "subscribe__fig-img" src="img/hello.png" alt = "hello_icon" >
+					</figure>
+					<p class="subscribe__desc">Я хочу знать,когда будет офлайн</p>
+				</div>
 				<form class="form subscribe__form">
-					<input class ="form__email" type="email"  nam="email" >
+					<input class ="form__email" type="email"  nam="email" value="Укажите email">
 					<button class="btn">Подписаться</button>
 				</form>
-				<p class="subscribe__form__agree" >Нажимая на кнопку вы соглашаетесь  на обработку <a href="#">персональных данных</a></p>
+				<p class="subscribe__form__agree" >Нажимая на кнопку вы соглашаетесь  на обработку <a href="#" title="согласие на обработку персональных данных">персональных данных</a></p>
 			</div>
 
-			<a href="#">Я кликнул просто посмотреть</a>
+			<a href="#" class="link_goback">Я кликнул просто посмотреть</a>
 
 		</section>
-
-		<!--feadback <div class="refuse contact__form contact__form--refuse">
-			<h2 class="visually-hidden">Отказаться от услуг</h2>
-			<p>Идите в жопу!</p>
-			<form class="refuse__form">
-				<button class = "btn--refuse" type = "submit">Вы свои цены видели</button>
-				<button class = "btn--refuse" type = "submit">Цены ни о чем</button>
-				<button class = "btn--refuse" type = "submit">У вас там всё хорошо?</button>
-				<button class = "btn--refuse" type = "submit">Денег нет,но вы держитесь</button>
-			</form>
-		</div>-->
+	</div>
+	<div class = "modal page modal-refuse">
+		<section class="modal-contact">
+			<div class="feedback contact__form contact__form--refuse">
+				<h2 class="visually-hidden">Отказаться от услуг</h2>
+				<div class="flex">
+					<figure class="feedback__fig">
+						<img class = "feedback__fig-img" src="img/facepalm.png" alt = "facepalm_icon" >
+					</figure>
+					<p class="feedback_desc">Идите в жопу!</p>
+				</div>
+				<form class="refuse__form">
+					<button class = "btn--refuse" type = "submit">Вы свои цены видели</button>
+					<button class = "btn--refuse" type = "submit">Цены ни о чем</button>
+					<button class = "btn--refuse" type = "submit">У вас там всё хорошо?</button>
+					<button class = "btn--refuse" type = "submit">Денег нет,но вы держитесь</button>
+				</form>
+			</div>
+			<a href="#" class="link_goback">Я кликнул просто посмотреть</a>
+		</section>
 	</div>
 
 </body>
